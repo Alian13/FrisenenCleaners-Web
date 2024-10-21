@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Changed from none to border-box */
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-image: url("D:/FRISENEN CLEANERS/FRISENENCLEANERS WEB/Gambar/for index.jpg");
+    background-size: cover; /* Changed from 100% to cover for better responsiveness */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* No repeat */
+    background-attachment: fixed;
+    backdrop-filter: brightness(0.7);
+    display: flex;
+    flex-direction: column; /* Stack everything vertically by default */
+    min-height: 100vh; 
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 2.5%; /* Adjusted padding for better responsiveness */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.logo {
+    width: 12vh;
+    margin: 0 auto; /* Center the logo */
+}
+
+.logo1, .logo2 {
+    color: aliceblue;
+    font-size: 2rem; /* Use rem for better scalability */
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 2em;
+    font-size: 1.5rem; /* Use rem for better scalability */
+}
+
+nav ul li a {
+    font-family: 'Impact';
+    text-decoration: none;
+    color: whitesmoke;
+    transition: all 100ms;
+}
+
+nav ul li a:hover {
+    color: #880000;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+}
+
+.hero {
+    margin: 5%;
+    font-size: 2.5rem; /* Use rem for better scalability */
+    color: white;
+    animation: fadeInUp 1.6s ease-in-out; /* Add fadeInUp animation */
+
+}
+
+.hero h1 {
+    margin: -20px 0 107px;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+}
+
+.btn {
+    display: inline-block;
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: rgb(248, 149, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem; /* Use rem for better scalability */
+    text-align: center;
+    transition: all 350ms;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #004a80;
+    color: rgb(248, 149, 0);
+}
+
+.about-us {
+    font-family: 'Open Sans';
+    font-size: 2.3rem; /* Use rem for better scalability */
+    background-color: rgb(197, 197, 197);
+    margin-top: 19%;
+    padding: 20px;
+    text-align: left;
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.about-us h2 {
+    font-size: 2rem; /* Use rem for better scalability */
+}
+
+.about-us p {
+    font-size: 1rem; /* Use rem for better scalability */
+    line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ensure full width */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+
+    header {
+        flex-direction:initial; /* Stack elements vertically */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        display: none;
+    }
+
+    .logo1 {
+        display: none;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 1em; /* Reduce gap for smaller screens */
+        display: list-item;
+    }
+
+    .hero {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .about-us {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
