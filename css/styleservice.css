@@ -150,6 +150,24 @@ nav ul li a:hover {
     color: #fff;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ensure full width */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* Keyframes for Animations */
 @keyframes fadeIn {
     0% {

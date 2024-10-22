@@ -1,3 +1,4 @@
+/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Body styling */
 body {
     background-image: url("../Gambar/for index.jpg");
     background-size: cover; 
@@ -17,6 +19,7 @@ body {
     min-height: 100vh; 
 }
 
+/* Header styling */
 header {
     background-color: rgba(255, 255, 255, 0);
     padding: 2.5%; 
@@ -28,6 +31,7 @@ header {
     animation: fadeIn 2s ease-in-out;
 }
 
+/* Logo styling */
 .logo {
     width: 12vh;
     margin: 0 auto; 
@@ -39,12 +43,13 @@ header {
     letter-spacing: 2px;
 }
 
+/* Navigation styling */
 nav ul {
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap; 
     gap: 2em;
-    font-size: 1.5rem; /* Use rem for better scalability */
+    font-size: 1.5rem; /* Responsif dengan rem */
 }
 
 nav ul li a {
@@ -59,12 +64,12 @@ nav ul li a:hover {
     text-shadow: 0px 0px 2px rgb(255, 255, 255);
 }
 
+/* Hero Section Styling */
 .hero {
     margin: 5%;
-    font-size: 2.5rem; /* Use rem for better scalability */
+    font-size: 2.5rem; 
     color: white;
-    animation: fadeInUp 1.6s ease-in-out; /* Add fadeInUp animation */
-
+    animation: fadeInUp 1.6s ease-in-out; 
 }
 
 .hero h1 {
@@ -72,6 +77,7 @@ nav ul li a:hover {
     text-shadow: 2px 2px 0px rgb(0, 0, 0);
 }
 
+/* Button Styling */
 .btn {
     display: inline-block;
     border: 4px solid black;
@@ -79,7 +85,7 @@ nav ul li a:hover {
     padding: 10px 20px;
     background-color: rgb(248, 149, 0);
     color: rgb(255, 255, 255);
-    font-size: 1.5rem; /* Use rem for better scalability */
+    font-size: 1.5rem; 
     text-align: center;
     transition: all 350ms;
     text-decoration: none;
@@ -90,9 +96,10 @@ nav ul li a:hover {
     color: rgb(248, 149, 0);
 }
 
+/* About Us Section Styling */
 .about-us {
     font-family: 'Open Sans';
-    font-size: 2.3rem; /* Use rem for better scalability */
+    font-size: 2.3rem; 
     background-color: rgb(197, 197, 197);
     margin-top: 19%;
     padding: 20px;
@@ -101,11 +108,11 @@ nav ul li a:hover {
 }
 
 .about-us h2 {
-    font-size: 2rem; /* Use rem for better scalability */
+    font-size: 2rem; 
 }
 
 .about-us p {
-    font-size: 1rem; /* Use rem for better scalability */
+    font-size: 1rem; 
     line-height: 1.6;
 }
 
@@ -128,30 +135,27 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Media Queries for Responsive Design */
 @media (max-width: 1000px) {
-
     header {
-        flex-direction:initial; /* Stack elements vertically */
-        display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Stack elements vertically */
         align-items: flex-start;
     }
+
     .logo {
         display: none;
     }
 
-    .logo1 {
-        display: none;
-    }
-
-    .logo2 {
+    .logo1, .logo2 {
         display: none;
     }
 
     nav ul {
         flex-direction: column; /* Stack nav items vertically */
-        gap: 1em; /* Reduce gap for smaller screens */
+        gap: 1em;
+        gap: 0.6em; /* Reduce gap for smaller screens */
         display: list-item;
+        font-size: 1.5rem;
     }
 
     .hero {
@@ -163,6 +167,41 @@ footer a:hover {
     }
 }
 
+@media (max-width: 768px) {
+    nav ul {
+        font-size: 1.2rem; /* Further reduce font size for mobile */
+    }
+
+    .hero {
+        font-size: 1.5rem; /* Reduce size for small screens */
+    }
+
+    .btn {
+        font-size: 1rem; /* Adjust button size */
+    }
+
+    .about-us {
+        font-size: 1rem;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        font-size: 1.2rem; /* Further reduce size for very small screens */
+    }
+
+    .about-us {
+        font-size: 0.6rem; /* Adjust section size for small screens */
+        margin-top: 5%;
+    }
+
+    .btn {
+        font-size: 1rem; /* Smaller button text */
+    }
+}
+
+/* Animations */
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -170,7 +209,7 @@ footer a:hover {
     to {
       opacity: 1;
     }
-  }
+}
 
 @keyframes fadeInUp {
     from {
@@ -181,9 +220,9 @@ footer a:hover {
       opacity: 1;
       transform: translateY(0);
     }
-  }
-  
-  @keyframes slideInLeft {
+}
+
+@keyframes slideInLeft {
     from {
       opacity: 0;
       transform: translateX(-20px);
@@ -192,4 +231,4 @@ footer a:hover {
       opacity: 1;
       transform: translateX(0);
     }
-  }
+}
