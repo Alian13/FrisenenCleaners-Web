@@ -1,27 +1,27 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Changed from none to border-box */
+    box-sizing: border-box; 
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
-    background-image: url("D:/FRISENEN CLEANERS/FRISENENCLEANERS WEB/Gambar/for index.jpg");
-    background-size: cover; /* Changed from 100% to cover for better responsiveness */
-    background-position: center; /* Center the background */
-    background-repeat: no-repeat; /* No repeat */
+    background-image: url("../Gambar/for index.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     background-attachment: fixed;
     backdrop-filter: brightness(0.7);
     display: flex;
-    flex-direction: column; /* Stack everything vertically by default */
+    flex-direction: column; 
     min-height: 100vh; 
 }
 
 header {
     background-color: rgba(255, 255, 255, 0);
-    padding: 2.5%; /* Adjusted padding for better responsiveness */
+    padding: 2.5%; 
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
     letter-spacing: 1px;
@@ -30,12 +30,12 @@ header {
 
 .logo {
     width: 12vh;
-    margin: 0 auto; /* Center the logo */
+    margin: 0 auto; 
 }
 
 .logo1, .logo2 {
     color: aliceblue;
-    font-size: 2rem; /* Use rem for better scalability */
+    font-size: 2rem; 
     letter-spacing: 2px;
 }
 
