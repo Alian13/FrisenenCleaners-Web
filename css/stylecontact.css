@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image:url("D:/FRISENEN CLEANERS/FRISENENCLEANERS WEB/Gambar/—Pngtree—red blue neon background_1343840.png");
+    background-image:url("../Gambar/—Pngtree—red blue neon background_1343840.png");
     background-size: cover; /* Changed from 100% to cover for better responsiveness */
     background-position: center; /* Center the background */
     background-repeat: no-repeat; /* No repeat */
