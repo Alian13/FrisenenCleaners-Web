@@ -30,7 +30,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2em;
+    gap: 1rem;
     font-size: 1.8rem;
 }
 
@@ -50,6 +50,9 @@ nav ul li a:hover {
     color: #f9a826;
     text-shadow: 0px 0px 1px rgb(255, 255, 255);
 }
+
+
+
 
 /* Section styling */
 .services {
@@ -73,6 +76,24 @@ nav ul li a:hover {
     box-shadow: 0 9px 70px 8px #024372;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ensure full width */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -94,39 +115,73 @@ nav ul li a:hover {
 }
 
 @media (max-width: 1000px) {
+    
     header {
         padding: 1rem 0.5rem;
     }
 
-    nav ul {
-        flex-direction: column; /* Stack nav items vertically */
-        gap: 0.6em; /* Reduce gap for smaller screens */
-        display: list-item;
-        font-size: 1.5rem;
+    nav ul li {
+        font-size: 0.9rem; /* Further reduce font size for mobile */
+        float: center;
+        margin: 0 12px;
+    }
+
+    nav ul li a {
+        font-size: 1.9rem; /* Further reduce font size for mobile */
+        float: center;
+        text-align: center;
+        line-height: 200%;
     }
 
     .services {
         padding: 50x 10x;
     }
+
     .service-card img {
-        width: 90%;
+        width: 70%;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+    footer p  {
+        font-size: 1.5rem;
+        margin-top: 1.5%;
     }
 }
 
-footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    width: 100%; /* Ensure full width */
-}
 
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
+@media (max-width: 448px) {
 
-footer a:hover {
-    text-decoration: underline;
+    nav ul {
+        font-size: 0.9rem; /* Further reduce font size for mobile */
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Further reduce font size for mobile */
+        float: left;
+        text-align: center;
+        line-height: 200%;
+    }
+
+    .services {
+        padding: 50x 10x;
+    }
+
+    .service-card img {
+        width: 70%;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    footer p  {
+        font-size: 1rem;
+        margin-top: 1.5%;
+    }
 }

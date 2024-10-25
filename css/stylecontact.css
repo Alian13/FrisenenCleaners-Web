@@ -122,4 +122,36 @@ button:hover {
       opacity: 1;
       transform: translateY(0);
     }
-  }
+}
+
+@media (max-width: 885px) {
+
+    nav ul li {
+        float: left;
+        margin: 0 30px;
+    }
+
+    nav ul li a {
+        font-size: 2.5rem; /* Further reduce font size for mobile */
+        text-align: center;
+        line-height: 200%;
+    }
+}
+
+@media (max-width: 448px) {
+
+    nav ul {
+        font-size: 0.9rem; /* Further reduce font size for mobile */
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        font-size: 1.3rem; /* Further reduce font size for mobile */
+        float: left;
+        text-align: center;
+        line-height: 200%;
+    }
+}
