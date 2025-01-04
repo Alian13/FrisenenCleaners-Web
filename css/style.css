@@ -33,7 +33,7 @@ header {
 
 /* Logo styling */
 .logo {
-  width: 12vh;
+  width: 16vh;
   margin: 0 auto;
 }
 
@@ -61,7 +61,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #880000;
+  color: #0703f7;
   text-shadow: 0px 0px 2px rgb(255, 255, 255);
 }
 
@@ -99,22 +99,52 @@ nav ul li a:hover {
 
 /* About Us Section Styling */
 .about-us {
-  font-family: "Open Sans";
-  font-size: 2.3rem;
-  background-color: rgb(197, 197, 197);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  background-color: rgb(197, 197, 197); /* Tetap sesuai gambar */
   margin-top: 19%;
-  padding: 20px;
-  text-align: left;
-  animation: slideInLeft 2s ease-in-out;
+  padding: 25px 30px;
+  border-radius: 8px; /* Membuat sudut box sedikit melengkung */
+  text-align: justify; /* Teks di-justify */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0); /* Tambahkan bayangan lembut */
+  line-height: 1.8;
+  animation: slideInLeft 1.5s ease-in-out;
 }
 
 .about-us h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 15px;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(44, 44, 44, 0.3);
 }
 
 .about-us p {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #000000;
+  margin-bottom: 5px;
+  text-align: justify; /* Justify semua teks */
+}
+
+.about-us .highlight {
+  font-weight: bold;
+  color: #004a80; /* Highlight dengan warna berbeda */
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* Animasi untuk efek masuk */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Footer styles */
