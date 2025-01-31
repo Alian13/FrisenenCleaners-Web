@@ -50,7 +50,7 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
-  font-size: 1.5rem; /* Responsif dengan rem */
+  font-size: 1.7rem; /* Responsif dengan rem */
 }
 
 nav ul li a {
@@ -58,11 +58,12 @@ nav ul li a {
   text-decoration: none;
   color: whitesmoke;
   transition: all 100ms;
+  margin: 0 12px 0;
 }
 
 nav ul li a:hover {
-  color: #0703f7;
-  text-shadow: 0px 0px 2px rgb(255, 255, 255);
+  color: #1f8836;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 /* Hero Section Styling */
