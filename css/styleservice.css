@@ -1,7 +1,7 @@
 /* General Reset */
 * {
   margin: 0;
-  padding: 0;
+  padding: 0p;
   box-sizing: border-box;
 }
 
@@ -33,7 +33,6 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   font-family: "Impact";
-  text-decoration: none;
   color: whitesmoke;
   font-size: 1.5rem;
 }
@@ -129,6 +128,62 @@ nav ul li a:hover {
   color: #0f3460;
 }
 
+.service-card-packages {
+  background-color: #f3f4f6;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  opacity: 0;
+  transform: translateY(20px); /* Cards start off slightly lower */
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.service-card-packages {
+  animation-delay: 0.3s;
+}
+
+.service-card-packages {
+  animation-delay: 0.4s;
+}
+
+.service-card-packages:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.service-card-packages:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.service-card-packages:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+.service-card-packages:nth-child(6) {
+  animation-delay: 0.8s;
+}
+
+/* Hover Animation on Cards */
+.service-card-packages:hover {
+  transform: translateY(-10px) rotate(2deg); /* Hover effect - lifts and slightly rotates the card */
+  box-shadow: 0 2px 5px #0d92cf; /* Deepens shadow on hover */
+  border: 1px solid #00adfd; /* Adds a yellow border on hover */
+  transition: all 0.2s ease;
+}
+
+.service-card-packages img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #00adfd;
+}
+
+.service-card-packages h4 {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #0f3460;
+}
+
 .service-card p {
   font-size: 14px;
   padding: 0 20px 20px;
@@ -152,7 +207,7 @@ nav ul li a:hover {
 footer {
   background-color: black;
   color: white;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
   width: 100%; /* Ensure full width */
 }
