@@ -168,9 +168,27 @@ footer a:hover {
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+  nav ul {
+    margin-bottom: 15%;
+    margin-top: 5%;
+  }
+
+  nav ul li {
+    float: left;
+    margin: 0 30px;
+  }
+
+  nav ul li a {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 200%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   header {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     align-items: flex-start;
   }
 
@@ -184,29 +202,29 @@ footer a:hover {
   }
 
   nav ul {
-    flex-direction: column; /* Stack nav items vertically */
+    flex-direction: column;
     gap: 1em;
-    gap: 0.6em; /* Reduce gap for smaller screens */
     display: list-item;
     font-size: 1.5rem;
   }
 
   .hero {
-    font-size: 2rem; /* Adjust font size for smaller screens */
+    font-size: 2rem;
   }
 
   .about-us {
-    font-size: 0rem; /* Adjust font size for smaller screens */
+    font-size: 1rem;
     text-align: justify;
   }
 }
 
-@media (max-width: 885px) {
+@media screen and (max-width: 885px) {
   body {
     background-size: cover;
     background-size: 255%;
     background-position: 40% 6%;
   }
+
   nav ul {
     margin-bottom: 15%;
     margin-top: 5%;
@@ -218,17 +236,17 @@ footer a:hover {
   }
 
   nav ul li a {
-    font-size: 1.8rem; /* Further reduce font size for mobile */
+    font-size: 1.8rem;
     text-align: center;
     line-height: 200%;
   }
 
   .hero {
-    font-size: 2rem; /* Reduce size for small screens */
+    font-size: 2rem;
   }
 
   .btn {
-    font-size: 1.5rem; /* Adjust button size */
+    font-size: 1.5rem;
   }
 
   .about-us {
@@ -257,7 +275,7 @@ footer a:hover {
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   body {
     background-size: cover;
     background-size: 240%;
@@ -265,30 +283,28 @@ footer a:hover {
   }
 
   nav ul {
-    font-size: 0.9rem; /* Further reduce font size for mobile */
+    font-size: 1rem;
     margin-bottom: 25%;
     margin-top: 5%;
   }
 
   nav ul li {
-    font-size: 0.9rem; /* Further reduce font size for mobile */
-    float: left;
     margin: 0 12px;
   }
 
   nav ul li a {
-    font-size: 0.9rem; /* Further reduce font size for mobile */
+    font-size: 1.2rem;
     float: left;
     text-align: center;
     line-height: 200%;
   }
 
   .hero {
-    font-size: 1.1rem; /* Further reduce size for very small screens */
+    font-size: 1.1rem;
   }
 
   .about-us {
-    font-size: 0.1rem; /* Adjust section size for small screens */
+    font-size: 0.1rem;
     margin-top: 13%;
   }
 
@@ -305,12 +321,13 @@ footer a:hover {
   }
 
   .btn {
-    font-size: 0.7rem; /* Smaller button text */
+    font-size: 0.7rem;
   }
 
   footer {
     font-size: 0.9rem;
   }
+
   footer p {
     font-size: 1rem;
     margin-top: 1.5%;

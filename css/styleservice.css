@@ -244,16 +244,16 @@ footer a:hover {
 }
 
 /* Responsive */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   header {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
   }
 
   nav ul {
-    flex-direction: column; /* Stack nav items vertically */
-    gap: 1em; /* Reduce gap for smaller screens */
-    display: list-item;
-    font-size: 0.5rem;
+    flex-direction: column;
+    gap: 1em;
+    margin-right: 15px;
+    text-align: center;
   }
 
   .service-grid {
@@ -261,25 +261,47 @@ footer a:hover {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service-card {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   nav ul li {
-    font-size: 0.9rem; /* Further reduce font size for mobile */
-    float: center;
-    margin: 0 12px;
+    font-size: 0.9rem;
+    margin: 0 11px;
   }
 
   nav ul li a {
-    font-size: 1.2rem; /* Further reduce font size for mobile */
-    float: center;
-    text-align: center;
+    font-size: 1.2rem;
     line-height: 200%;
+    margin-right: 22.5px;
   }
+
   .services h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .services p1 {
-    font-size: 16px;
+    font-size: 15px;
+    text-align: center;
   }
 
   .service-card h3 {
@@ -288,5 +310,16 @@ footer a:hover {
 
   .service-card p {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .service-grid {
+    padding: 0 10px;
+  }
+
+  .service-card {
+    margin: 5px;
+    padding: 5px;
   }
 }
